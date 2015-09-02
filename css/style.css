@@ -1,6 +1,7 @@
 .container{
 		padding-left:0;
 		padding-right:0;
+		width:1024px;
 }
 .mm-social-icon{
 	  text-align: center;
@@ -11,6 +12,9 @@
   width: auto;
   display: inline-block;
   float: right;
+}
+.navbar-nav>li{
+		padding:0 15px;
 }
 .mm-social-icon ul li{
 	display:inline-block;
@@ -45,7 +49,7 @@ header {
 	width:25%;
 	display:inline-block;
 }
-.latHm{display:inline-block;}
+.latHm{display:inline-block;cursor:pointer;}
 .repeatNew-hm{
 	width:100%;
 	max-height:150px;
@@ -67,15 +71,24 @@ header {
 	padding:5px 0;
 	left:0;	
 	background-color:rgba(0,0,0,0.5);
+	color:#fff;
 }
 .rightHm{
-	width: 80rem;
+	width: 74rem;
+	padding:10px;
 	border: 1px solid #fff;
 	display: inline-block;
 	vertical-align: top;
 	margin: 0px 0 0 15px;
 	max-height: 250px;
 	overflow: hidden;
+}
+.rightHm newsTitle{
+	font-size:24px;
+	font-weight:bold;
+	color:#000;	
+	display: block;
+	text-transform: capitalize;
 }
 .hmScrn{
 	text-align:left;
@@ -93,7 +106,7 @@ header {
 .paddIngZero{padding:0;}
 .New-Video-Gall{padding:15px 15px !important;}
 .nvg-list{
-		padding-bottom:15px;
+		padding:0 10px 10px 0;
 }
 .after-icon{
 	  position: absolute;
@@ -123,4 +136,30 @@ footer .container .row{
 .wrapperDetails{
 	padding:0;
 	margin:0;
+}
+.imgThumb{
+		margin-bottom:2px;
+		max-height:140px;
+		overflow:hidden;
+		border:none;
+		padding:0;
+		position:relative;
+		text-align:center;
+}
+.imgThumb span,span.title{
+		position: absolute;
+  z-index: 10000;
+  color: #fff;
+  width: 95%;
+  top: 46%;
+  left:0;
+  margin: 0;
+  vertical-align: middle;
+  display: inline-block;
+  font-size: 16px;
+  opacity: 0.3;
+  margin: 0 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
