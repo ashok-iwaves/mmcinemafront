@@ -100,54 +100,7 @@
         <!-- /.container-fluid -->
     </nav>
 
-    <script>
-	var app = angular.module('myApp', []);
-app.controller('customersCtrl', function($scope, $http) {
-  //  $http.get("http://www.w3schools.com/angular/customers.php")
-    //.success(function (response) {$scope.names = response.records;});
-    var listitem = {"records":[{'name':'Gobinath','img':'img/Anegan111.jpg','desc':'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy  text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.'},{'name':'vijay','img':'img/Bachalpseeflowers.jpg'},{'name':'suriya','img':'img/green-nature-road-1280x800.jpg'},{'name':'vijay','img':'img/Bachalpseeflowers.jpg'},{'name':'vijay','img':'img/Bachalpseeflowers.jpg'},{'name':'suriya','img':'img/Anegan111.jpg'},{'name':'suriya','img':'img/Anegan111.jpg'},{'name':'vijay','img':'img/Bachalpseeflowers.jpg'},{'name':'suriya','img':'img/Anegan111.jpg'},{'name':'vijay','img':'img/Bachalpseeflowers.jpg'},{'name':'suriya','img':'img/green-nature-road-1280x800.jpg'}]}
-    $scope.names = listitem.records;
-     $scope.htmltag = ' <a href="#">sdsdsd</a> ';
-});
-    </script>
-	<section class="paddIngZero" style="margin-top:105px">
-        <div class="container">
-	
-             <div class="intro-text hmScrn" ng-app="myApp">
-			<div class="combine"  ng-controller="customersCtrl" >			
-			 <div  ng-repeat="x in names.slice(0, 1)">
-			 <div class="leftHome">
-				<h3 class="section-heading">Hollywood News</h3>
-				<div class="latHm">
-					<div class="repeatNew-hm">
-						<img src="{{ x.img }}" class="img-responsive" alt="">
-						<span>{{ x.name }}</span>												
-						<i class="glyphicon glyphicon-triangle-right after-icon"></i>
-					</div>
-				</div>
-			 </div>
-			 <div class="rightHm">
-			 <newsTitle>{{ x.name }}</newsTitle>
-			 {{ x.desc | limitTo: 900 }}{{  x.desc.length > 900 ? ' ...' : ''}}						 
-			 </div> 
-			 <div>
-			 </div>
-			<div style="padding:10px;"></div>			 
-			<div class="latHm "  ng-controller="customersCtrl">				
-			<div class="col-lg-3 col-md-4 col-xs-6 nvg-list" ng-repeat="x in names.slice(1, 9)" >
-				<a class="thumbnail imgThumb" href="#">
-					<img class="img-responsive" src="{{ x.img }}" alt="">
-					<span>{{ x.name }}</span>
-				</a>			
-			</div>				
-			</div>
-			<a href="#" class="moreDetails"><i class="fa fa-hand-o-right"></i> Learn More</a>
-            </div>		
-        </div>
-	</section>
-	
-	
-	
+  
 	
     <footer class="navbar-default navbar-shrink">
         <div class="container">
