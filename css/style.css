@@ -1,7 +1,7 @@
 .container{
 		padding-left:0;
 		padding-right:0;
-		width:1024px;
+		width:1200px;
 }
 .mm-social-icon{
 	  text-align: center;
@@ -126,6 +126,9 @@ header {
 .paddIngZero:last-of-type{
 		margin-bottom:10px;
 }
+footer{
+		padding-bottom:0;
+}
 footer .container{
 		background:#222;
 }
@@ -148,7 +151,7 @@ footer .container .row{
 }
 .imgThumb span,span.title{
 		position: absolute;
-  z-index: 10000;
+  z-index: 100;
   color: #fff;
   width: 95%;
   top: 46%;
@@ -163,3 +166,66 @@ footer .container .row{
   overflow: hidden;
   text-overflow: ellipsis;
 }
+.listWrappadding{
+		padding-left:0;
+		border-right-width:0.1em;
+		border-right-style:solid;
+		border-right-color:rgba(3,3,3,0.2);
+		box-shadow:none;	
+}
+.lispageCombine{
+		width:100%;
+		display:inline-block;
+		border-bottom-width:0.1em;
+		border-bottom-style:solid;
+		border-bottom-color:rgba(3,3,3,0.2);
+		box-shadow:none;
+		-webkit-box-sizing:initial;
+		box-sizing:initial;
+		margin-bottom:5px;
+}
+.lispageCombine:nth-last-of-type(1),.listWrappadding:nth-last-of-type(1) {
+	border:none;
+}
+.lispageCombine h4{
+		margin-top:0;
+}
+.listpageTxtwrap{
+	margin-left:10px;
+	padding-left:10px;
+	width:70%;
+}
+.nopadding{
+		padding:0;
+}
+.nopaddingleft{
+	padding-left:0;
+}
+.nopaddingright{
+	padding-right:0;
+}
+.paddingbottom{
+		padding-bottom:10px;
+}
+.trailler div{
+	text-align:center;	
+	margin-bottom:10px;
+	padding-left:10px;
+}
+.trailler div img{
+	display:inherit;
+	max-height:100%;
+}
+aside{
+	border-top:1px solid rgba(3,3,3,0.2);
+	display:inline-block;
+}
+aside:first-of-type{
+	border:none;
+}
+.relatedNews{
+		padding-top:15px;
+		margin-top:15px;
+		border-top:1px solid rgba(3,3,3,0.2);
+}
+

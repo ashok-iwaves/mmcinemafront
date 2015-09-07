@@ -22,9 +22,8 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
 </head>
-<body id="page-top" class="index"  ng-app="myApp">
+<body id="page-top" class="index"  ng-app="myhome">
 	<header id="header"></header>
 	<section class="paddIngZero" style="margin-top:105px">
         <div class="container">	
@@ -128,36 +127,16 @@
             </div>		
         </div>
 	</section>
-	<footer></footer>
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-    <!-- Plugin JavaScript -->
-    <script src="js/jquery.easing.min.js"></script>
-    <script src="js/classie.js"></script>
-    <script src="js/cbpAnimatedHeader.js"></script>
-    <!-- Contact Form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
-    <!-- Custom Theme JavaScript -->
-    <script src="js/agency.js"></script>
-    <script src="js/angular.min.js"></script>
-	<script>
+	<footer></footer>    
+<script src="js/jquery.js"></script> 
+<script src="js/agency.js"></script>
+<script src="js/angular.min.js"></script>
+<script src="js/common.js"></script>
+<script>	
 	$(function(){
-		$('#header').load('header.html');
-		//$('#welcome').load('page_sections/welcome_section.html');
+		$('header').load('header.html');		
 		$('footer').load('footer.html');
 	});
-	var app = angular.module('myApp', []);
-app.controller('customersCtrl', function($scope, $http) {
-  //  $http.get("http://www.w3schools.com/angular/customers.php")
-    //.success(function (response) {$scope.names = response.records;});
-    var listitem = {"records":[{'name':'Gobinath','img':'img/Anegan111.jpg','desc':'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy  text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.'},{'name':'vijay','img':'img/Bachalpseeflowers.jpg'},{'name':'suriya','img':'img/green-nature-road-1280x800.jpg'},{'name':'vijay','img':'img/Bachalpseeflowers.jpg'},{'name':'vijay','img':'img/Bachalpseeflowers.jpg'},{'name':'suriya','img':'img/Anegan111.jpg'},{'name':'suriya','img':'img/Anegan111.jpg'},{'name':'vijay','img':'img/Bachalpseeflowers.jpg'},{'name':'suriya','img':'img/Anegan111.jpg'},{'name':'vijay','img':'img/Bachalpseeflowers.jpg'},{'name':'suriya','img':'img/green-nature-road-1280x800.jpg'}]}
-    $scope.names = listitem.records;
-     $scope.htmltag = ' <a href="#">sdsdsd</a> ';
-});
-    </script>
+</script>
 </body>
-
 </html>
