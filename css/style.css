@@ -66,11 +66,11 @@ header {
 }
 .repeatNew-hm  span{
 	position:absolute;
-	bottom:0;
+	bottom1:0;
 	width:100%;
 	padding:5px 0;
 	left:0;	
-	background-color:rgba(0,0,0,0.5);
+	background-color1:rgba(0,0,0,0.5);
 	color:#fff;
 }
 .rightHm{
@@ -157,7 +157,7 @@ footer .container .row{
   vertical-align: middle;
   display: inline-block;
   font-size: 16px;
-  opacity: 0.3;
+  opacity: 0.6;
   margin: 0 10px;
   white-space: nowrap;
   overflow: hidden;
