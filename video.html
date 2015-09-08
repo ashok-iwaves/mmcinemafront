@@ -29,43 +29,28 @@
 	 <div class="container">
 		<div class=" col-sm-6 col-md-8 col-xs-6 nopaddingleft listWrappadding" ng-controller="customersCtrl">
 			<div class="combine"   >			
-				<div class="lispageCombine"  ng-repeat="x in names.slice(0, 8)">
-					 <div class="leftHome pull-left">
-						<div class="latHm">
-							<div class="repeatNew-hm">
-								<img src="{{ x.img }}" class="img-responsive" alt="">
-								<span class="title">{{ x.name }}</span>
-							</div>
-						</div>
-					 </div>
-					 <div class="pull-left listpageTxtwrap">
+				<div class="lispageCombine"  ng-repeat="x in names.slice(0, 1)">					 
+					 <div class="col-md-12 nopaddingleft">
 						<h4>{{ x.name }}</h4>
-						{{ x.desc | limitTo: 250 }}{{  x.desc.length > 250 ? ' ...' : ''}}						 
+						<iframe width="100%" height="450" src="https://www.youtube.com/embed/07fBh38vvhQ" frameborder="0" allowfullscreen></iframe>
+						<div style="padding:10px;"></div>											 
 					 </div> 
 				 </div>
+				<a href="http://twitter.com/home?status=" title="Share on Twitter" target="_blank" class="btn btn-twitter socialIcon"><i class="fa fa-twitter"></i> Twitter</a>
+				<a href="https://www.facebook.com/sharer/sharer.php?u=" title="Share on Facebook" target="_blank" class="btn btn-facebook socialIcon"><i class="fa fa-facebook"></i> Facebook</a>
+				<a href="https://plus.google.com/share?url=" title="Share on Google+" target="_blank" class="btn btn-googleplus socialIcon"><i class="fa fa-google-plus"></i> Google+</a>
 			 </div>
+			 <div style="padding:10px;"></div>	
+			<div class="combine">
+				<div class="trailler">
+					<div class="col-md-6 nopaddingleft"><iframe width="100%" height="250" src="https://www.youtube.com/embed/07fBh38vvhQ" frameborder="0" allowfullscreen></iframe></div>
+					<div class="col-md-6 nopaddingleft"><iframe width="100%" height="250" src="https://www.youtube.com/embed/07fBh38vvhQ" frameborder="0" allowfullscreen></iframe></div>
+					<div class="col-md-6 nopaddingleft"><iframe width="100%" height="250" src="https://www.youtube.com/embed/07fBh38vvhQ" frameborder="0" allowfullscreen></iframe></div>
+					<div class="col-md-6 nopaddingleft"><iframe width="100%" height="250" src="https://www.youtube.com/embed/07fBh38vvhQ" frameborder="0" allowfullscreen></iframe></div>
+				</div>
+			</div>	
 		</div>
-		<div class=" col-sm-6 col-md-4 col-xs-6  nopaddingright ">
-			<aside id="trailler" class="col-md-12 nopadding">
-				<h4>Trailler</h4>
-				<div class="trailler">
-					<div class="col-md-6 nopaddingleft"><img src="img/Bachalpseeflowers.jpg" alt="" class="img-responsive"/></div>
-					<div class="col-md-6 nopaddingleft"><img src="img/Bachalpseeflowers.jpg" alt="" class="img-responsive"/></div>
-					<div class="col-md-6 nopaddingleft"><img src="img/Bachalpseeflowers.jpg" alt="" class="img-responsive"/></div>
-					<div class="col-md-6 nopaddingleft"><img src="img/Bachalpseeflowers.jpg" alt="" class="img-responsive"/></div>
-					<div class="col-md-6 nopaddingleft"><img src="img/Bachalpseeflowers.jpg" alt="" class="img-responsive"/></div>
-					<div class="col-md-6 nopaddingleft"><img src="img/Bachalpseeflowers.jpg" alt="" class="img-responsive"/></div>
-				</div>
-			</aside>
-			<aside id="review" class="col-md-12 nopadding">
-				<h4>Review</h4>
-				<div class="trailler">
-					<div class="col-md-6 nopaddingleft"><img src="img/Bachalpseeflowers.jpg" alt="" class="img-responsive"/></div>
-					<div class="col-md-6 nopaddingleft"><img src="img/Bachalpseeflowers.jpg" alt="" class="img-responsive"/></div>
-					<div class="col-md-6 nopaddingleft"><img src="img/Bachalpseeflowers.jpg" alt="" class="img-responsive"/></div>
-					<div class="col-md-6 nopaddingleft"><img src="img/Bachalpseeflowers.jpg" alt="" class="img-responsive"/></div>
-				</div>
-			</aside>
+		<div class=" col-sm-6 col-md-4 col-xs-6  nopaddingright ">				
 			<aside id="addpost" class="col-md-12 nopadding paddingbottom">
 				<h4>Addpost</h4>
 				<img src="img/govt-jobs-latest.jpg" alt="" class="img-responsive"/>

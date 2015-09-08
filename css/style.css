@@ -189,6 +189,7 @@ footer .container .row{
 }
 .lispageCombine h4{
 		margin-top:0;
+		cursor:pointer;
 }
 .listpageTxtwrap{
 	margin-left:10px;
@@ -228,4 +229,87 @@ aside:first-of-type{
 		margin-top:15px;
 		border-top:1px solid rgba(3,3,3,0.2);
 }
+.socialIcon{
+		background-color:#000;
+		margin-right:5px;
+}
+.socialIcon:hover{
+	color:#fff;
+}
+.reviewPortion{
+	position:relative;
+}
+.reviewPortion .reviewStar{
+	position:absolute;
+	top:3px;
+	left:18px;
+	color:#fed136;
+}
+.reviewPortion .reviewStar i{
+	margin-right:2px;
+	font-size:16px;
+}
+.reviewWrap .reviewStar i{
+	margin-right:2px;
+	font-size:24px;
+}
+.reviewScore{
+	position: relative;
+	font-size: 16px;
+	color: #333;
+	left: 6px;
+	top: -3px;
+}
+.reviewScore:before{
+		content:' - ';
+}
+.reviewScore:after{
+		content:' / 5';
+}
+.reviewPoint moviename,
+.reviewPoint director,
+.reviewPoint heroname,
+.reviewPoint herionename,
+.reviewPoint music,
+.reviewPoint releasedate,
+.reviewPoint producername{
+	display: block;
+	padding: 2px;
+	font-size: 14px;
+	font-weight: bold;
+	text-transform: capitalize;
+	padding-left: 5px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.reviewPoint moviename:before{content:'Movie :  ';font-weight: normal;margin-right:30px;}
+.reviewPoint director:before{content:'Director :  ';font-weight: normal;margin-right:17px;}
+.reviewPoint heroname:before{content:'Hero :  ';font-weight: normal;margin-right:40px;}
+.reviewPoint herionename:before{content:'Herione : ';font-weight: normal;margin-right:20px;}
+.reviewPoint music:before{content:'Music : ';font-weight: normal;margin-right:31px;}
+.reviewPoint releasedate:before{content:'Release : ';font-weight: normal;margin-right:21px;}
+.reviewPoint producername:before{content:'Producer : ';font-weight: normal;margin-right:13px;}
+.reviewPoint moviename{margin-top:10px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

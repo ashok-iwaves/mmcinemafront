@@ -23,43 +23,63 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body id="page-top" class="index"  ng-app="myhome" ng-controller="commonCtrl">
+<body id="page-top" class="index"  ng-app="myhome">
 <header></header>
-<section class="paddIngZero" style="margin-top:115px">
+<section class="paddIngZero reviewWrap" style="margin-top:115px">
 	 <div class="container">
 		<div class=" col-sm-6 col-md-8 col-xs-6 nopaddingleft listWrappadding" ng-controller="customersCtrl">
-			<div class="combine"   >			
-				<div class="lispageCombine"  ng-repeat="x in names.slice(0, 8)">
-					 <div class="leftHome pull-left">
-						<div class="latHm"  ng-click="goLogin('details.html')">
-							<div class="repeatNew-hm">
-								<img src="{{ x.img }}" class="img-responsive" alt="">
-								<span class="title">{{ x.name }}</span>
-							</div>
+			<div class="combine">			
+				<div class="lispageCombine"  ng-repeat="x in names.slice(0, 1)">					 
+					 <div class="col-md-12 nopaddingleft">
+						<h4>Movie Review - {{ x.name }}</h4>
+						<img src="{{ x.img }}" class="img-responsive col-md-6 nopaddingleft" alt="" style="margin-bottom:5px;">	
+						<div class="col-md-6 nopaddingleft paddingbottom reviewPoint">
+							<span class="reviewStar"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></span>
+							<span class="reviewScore">2.5</span>
+							<moviename>Gobinath</moviename>
+							<director>Gobi</director>
+							<heroname>Gobi</heroname>
+							<herionename>New</herionename>
+							<music>Gobi</music>
+							<releasedate>10-sep-2015</releasedate>
+							<producername>Gobinath</producername>
 						</div>
-					 </div>
-					 <div class="pull-left listpageTxtwrap">
-						<h4 ng-click="goLogin('details.html')">{{ x.name }}</h4>
-						{{ x.desc | limitTo: 250 }}{{  x.desc.length > 250 ? ' ...' : ''}}						 
+						{{ x.desc }}						 
 					 </div> 
 				 </div>
-			 </div>
+				<a href="http://twitter.com/home?status=" title="Share on Twitter" target="_blank" class="btn btn-twitter socialIcon"><i class="fa fa-twitter"></i> Twitter</a>
+				<a href="https://www.facebook.com/sharer/sharer.php?u=" title="Share on Facebook" target="_blank" class="btn btn-facebook socialIcon"><i class="fa fa-facebook"></i> Facebook</a>
+				<a href="https://plus.google.com/share?url=" title="Share on Google+" target="_blank" class="btn btn-googleplus socialIcon"><i class="fa fa-google-plus"></i> Google+</a>
+			 </div>			 
 		</div>
-		<div class=" col-sm-6 col-md-4 col-xs-6  nopaddingright ">
-			<aside id="trailler" class="col-md-12 nopadding">
-				<h4>Trailler</h4>
-				<div class="trailler">
-					<div class="col-md-6 nopaddingleft"><img src="img/Bachalpseeflowers.jpg" alt="" class="img-responsive"/></div>
-					<div class="col-md-6 nopaddingleft"><img src="img/Bachalpseeflowers.jpg" alt="" class="img-responsive"/></div>
-					<div class="col-md-6 nopaddingleft"><img src="img/Bachalpseeflowers.jpg" alt="" class="img-responsive"/></div>
-					<div class="col-md-6 nopaddingleft"><img src="img/Bachalpseeflowers.jpg" alt="" class="img-responsive"/></div>
-					<div class="col-md-6 nopaddingleft"><img src="img/Bachalpseeflowers.jpg" alt="" class="img-responsive"/></div>
-					<div class="col-md-6 nopaddingleft"><img src="img/Bachalpseeflowers.jpg" alt="" class="img-responsive"/></div>
-				</div>
-			</aside>
+		<div class=" col-sm-6 col-md-4 col-xs-6  nopaddingright ">			
 			<aside id="review" class="col-md-12 nopadding">
 				<h4>Review</h4>
 				<div class="trailler reviewPortion">
+					<div class="col-md-6 nopaddingleft">
+						<span class="reviewStar"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></span>
+						<img src="img/Bachalpseeflowers.jpg" alt="" class="img-responsive"/>
+					</div>
+					<div class="col-md-6 nopaddingleft">
+						<span class="reviewStar"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></span>
+						<img src="img/Bachalpseeflowers.jpg" alt="" class="img-responsive"/>
+					</div>
+					<div class="col-md-6 nopaddingleft">
+						<span class="reviewStar"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></span>
+						<img src="img/Bachalpseeflowers.jpg" alt="" class="img-responsive"/>
+					</div>
+					<div class="col-md-6 nopaddingleft">
+						<span class="reviewStar"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></span>
+						<img src="img/Bachalpseeflowers.jpg" alt="" class="img-responsive"/>
+					</div>
+					<div class="col-md-6 nopaddingleft">
+						<span class="reviewStar"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></span>
+						<img src="img/Bachalpseeflowers.jpg" alt="" class="img-responsive"/>
+					</div>
+					<div class="col-md-6 nopaddingleft">
+						<span class="reviewStar"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></span>
+						<img src="img/Bachalpseeflowers.jpg" alt="" class="img-responsive"/>
+					</div>
 					<div class="col-md-6 nopaddingleft">
 						<span class="reviewStar"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></span>
 						<img src="img/Bachalpseeflowers.jpg" alt="" class="img-responsive"/>
@@ -81,7 +101,7 @@
 			<aside id="addpost" class="col-md-12 nopadding paddingbottom">
 				<h4>Addpost</h4>
 				<img src="img/govt-jobs-latest.jpg" alt="" class="img-responsive"/>
-			</aside>
+			</aside>			
 			<aside id="addpost" class="col-md-12 nopadding paddingbottom">
 				<h4>Addpost</h4>
 				<img src="img/govt-jobs-latest.jpg" alt="" class="img-responsive"/>
